@@ -19,6 +19,6 @@ Test 8: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
 Test 9: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
 	close & diff data, CENX data, 200 epochs, target_network(30), kind of converges (still 		pretty noisy), alright strategy but not perfect (probably need more indicators)
 Test 10: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions,
-	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time), experience replay(buffer=50, 		batch=10), ???
+	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time), experience replay(buffer=50, 		batch=10), slow convergence???
 Test 11: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions,
 	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time), experience replay(buffer=100, 		batch=50), ???
