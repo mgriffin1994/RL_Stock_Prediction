@@ -1,0 +1,24 @@
+Q-Learning
+
+Test 1: decay=0.00001, 2 dense(4) 1 dense(3) layers, 3 actions, 
+	close & diff data, sin data, 100 epochs, converges (with sudden spikes)
+Test 2: decay=0.00001, 2 dense(4) 1 dense(3) layers, 3 actions, 900*0.85 samples
+	close & diff data, Goog data, 100 epochs, kind of converges to bad solution
+Test 3: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
+	close & diff data, Goog data, 100 epochs, converges in 1 step?
+Test 4: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
+	close & diff data, NIHD data, 100 epochs, converges in 1 step?
+Test 5: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
+	close & diff data, sin data, 100 epochs, almost gets to convergence (almost perfect 		actions)
+Test 6: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 
+	close & diff data, sin data, 200 epochs, converges around 75+ epochs
+Test 7: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions,
+	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time)
+Test 8: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
+	close & diff data, NIHD data, 200 epochs, target_network (30 day refresh), same performance
+Test 9: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions, 900 samples
+	close & diff data, CENX data, 200 epochs, target_network(30), kind of converges (still 		pretty noisy), alright strategy but not perfect (probably need more indicators)
+Test 10: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions,
+	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time), experience replay(buffer=50, 		batch=10), ???
+Test 11: decay=0.00001, 2 LSTM(4) 1 dense(3) layers, 3 actions,
+	close & diff data, sin data, 200 epochs, target_network (30 day refresh), slightly better 		performance, smoother convergence (about same time), experience replay(buffer=100, 		batch=50), ???
